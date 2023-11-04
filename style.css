@@ -1,0 +1,96 @@
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Add this line to center horizontally */
+}
+
+#answerText {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+#addBtn, #minusBtn, #multiplyBtn, #divideBtn {
+  background-color: #FFA500;
+  color: #fff;
+}
+
+#addBtn:hover, #minusBtn:hover, #multiplyBtn:hover, #divideBtn:hover {
+  background-color: #ff8c00;
+}
+
+#clearBtn {
+  background-color: #f00;
+  color: #fff;
+}
+
+#clearBtn:hover {
+  background-color: #c00;
+}
+
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 400px) {
+  #container {
+      width: 100%;
+  }
+
+  button {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      margin: 3px;
+  }
+
+  #zero {
+      width: 94px;
+  }
+}
